@@ -5,7 +5,7 @@ const Faq = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const questions = [
     {
-      question: "What is Next.js?",
+      question: "What is LabelMe?",
       answer:
         "Next.js is a framework for building server-side rendered React applications.",
     },
