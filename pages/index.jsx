@@ -18,7 +18,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Menu3 />
+      {/* <Menu3 /> */}
 
       <main className="flex w-full flex-col border-t md:border-0">
         {/* <HomePage />
