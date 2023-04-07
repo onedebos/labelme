@@ -21,13 +21,13 @@ const Home = () => {
       <Menu3 />
 
       <main className="flex w-full flex-col border-t md:border-0">
-        <HomePage />
+        {/* <HomePage />
         <StartCreating />
         <StartBusiness />
         <QuickEasy />
         <Reviews />
         <HowItWorks />
-        <FAQs />
+        <FAQs /> */}
       </main>
 
       <Footer />
