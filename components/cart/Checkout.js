@@ -95,7 +95,7 @@ const Checkout = ({ cart, handleRemoveFromCartAtCheckout }) => {
                   </p>
                   <button
                     onClick={() => handleRemoveFromCartAtCheckout(c.id)}
-                    className="mt-3 text-red-700 block"
+                    className="mt-3 text-red-700 block text-sm md:text-base"
                   >
                     Remove from Cart
                   </button>
