@@ -128,7 +128,7 @@ const NestedProduct = ({
       <div className="mt-4 md:max-w-xs">
         <Button
           onClick={() => goToNextStep(productType, nextStep)}
-          otherStyles={`bg-labelme-wine hover:bg-labelme-pink transition ease-in-out text-white rounded-lg py-5 justify-center md:justify-start md:py-2 md:pl-6 flex items-center max-w-xs md:w-full md:mr-14 `}
+          otherStyles={`bg-labelme-wine hover:bg-labelme-pink transition ease-in-out text-white rounded-lg justify-center md:justify-start md:py-2 md:pl-6 flex items-center max-w-xs md:w-full md:mr-14 `}
         >
           Continue with {capitalize(title)}{" "}
           {/* <TbMathGreater size={"1em"} className="ml-2" /> */}

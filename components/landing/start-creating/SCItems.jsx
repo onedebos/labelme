@@ -38,7 +38,7 @@ const SCItems = ({
           href={{
             pathname: `/start-creating/step/${formatTitle(title)}/${nextStep}`,
           }}
-          classnames={`bg-labelme-wine hover:bg-labelme-pink transition ease-in-out text-white rounded-lg py-5 justify-center md:justify-start md:py-2 md:pl-6 flex items-center max-w-xs md:mr-14`}
+          classnames={`bg-labelme-wine hover:bg-labelme-pink transition ease-in-out text-white rounded-lg justify-center md:justify-start md:py-2 md:pl-6 flex items-center max-w-xs md:mr-14`}
         >
           Start a {title} Line
         </LinkButton>

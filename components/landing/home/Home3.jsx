@@ -30,15 +30,13 @@ const FormBackgroundImage = () => {
               option1={"Within 7 Days"}
               option1Val={"Within 7 Days"}
             />
-            <Button
-              otherStyles={
-                "mt-5 text-center w-full text-black text-bold bg-labelme-pink"
-              }
+            <button
+              className={`text-white px-10 md:py-2 rounded-md flex items-center justify-center gap-2 text-center mt-5 w-full  text-bold bg-labelme-pink py-3 `}
               type={"submit"}
               onClick={onClickFn}
             >
               Get Started
-            </Button>
+            </button>
           </div>
         </div>
       </div>
