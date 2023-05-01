@@ -32,7 +32,7 @@ const FormBackgroundImage = () => {
             />
             <Button
               otherStyles={
-                "mt-5 text-center w-full bg-labelme-pink text-black text-bold"
+                "mt-5 text-center w-full text-black text-bold bg-labelme-pink"
               }
               type={"submit"}
               onClick={onClickFn}
