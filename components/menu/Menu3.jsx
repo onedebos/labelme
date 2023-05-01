@@ -91,7 +91,7 @@ const Menu = ({ signedIn = true }) => {
 
                 <Link
                   className="text-gray-800 hover:text-labelme-wine text-sm font-medium inline-flex items-end justify-end"
-                  href="/cart"
+                  href="/checkout"
                 >
                   {" "}
                   <AiOutlineShoppingCart className="h-8" size={"1.6em"} />
