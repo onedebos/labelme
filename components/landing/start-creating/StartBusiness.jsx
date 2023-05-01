@@ -1,5 +1,4 @@
-import React from "react";
-import Button from "../assets/Button";
+import Button from "../../assets/Button";
 
 const StartBusiness = () => {
   return (
@@ -10,14 +9,15 @@ const StartBusiness = () => {
           <span className="block mt-3 md:mt-8"> from anywhere.</span>
         </h1>
         <p className="mt-10 text-xl md:text-2xl">
-          with well-tested, quality and vegan products
+          With well-tested, quality and vegan products
         </p>
         <Button
           otherStyles={
-            "bg-labelme-wine text-center text-white w-full max-w-xs hover:bg-labelme-pink transition ease-in-out mt-10 py-3 md:py-2"
+            "bg-labelme-wine text-center text-white w-full max-w-xs hover:bg-labelme-pink transition ease-in-out mt-10"
           }
-          text={"Launch Your Line"}
-        />
+        >
+          Launch Your Line
+        </Button>
       </div>
     </div>
   );

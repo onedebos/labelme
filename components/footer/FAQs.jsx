@@ -5,17 +5,32 @@ const Faq = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const questions = [
     {
-      question: "What is LabelMe?",
+      question: "How do I place an Order?",
       answer:
         "Next.js is a framework for building server-side rendered React applications.",
     },
     {
-      question: "How does server-side rendering work in Next.js?",
+      question: "How long will it take to get my Order?",
       answer:
         "When a user requests a page, Next.js generates the HTML on the server and sends it to the client, which improves performance and allows search engines to crawl your pages more easily.",
     },
     {
-      question: "Can I use Tailwind CSS with Next.js?",
+      question: "What countries do you ship to?",
+      answer:
+        "Yes, you can use Tailwind CSS with Next.js by installing the `tailwindcss` and `postcss` packages and configuring your `postcss.config.js` file.",
+    },
+    {
+      question: "Are your products safe?",
+      answer:
+        "Yes, you can use Tailwind CSS with Next.js by installing the `tailwindcss` and `postcss` packages and configuring your `postcss.config.js` file.",
+    },
+    {
+      question: "How can I contact you?",
+      answer:
+        "Yes, you can use Tailwind CSS with Next.js by installing the `tailwindcss` and `postcss` packages and configuring your `postcss.config.js` file.",
+    },
+    {
+      question: "Can I book a consultation?",
       answer:
         "Yes, you can use Tailwind CSS with Next.js by installing the `tailwindcss` and `postcss` packages and configuring your `postcss.config.js` file.",
     },
@@ -29,7 +44,7 @@ const Faq = () => {
     <div className="bg-labelme-wine py-10 mt-10 md:mt-0">
       <div className="container mx-auto px-4 py-8">
         <p className="text-white text-xl md:text-2xl">Got Questions?</p>
-        <p className="text-labelme-pink mb-10 mt-3 md:text-2xl">
+        <p className="text-labelme-pink-lighter mb-10 mt-3 md:text-2xl">
           Frequently Asked Questions
         </p>
         {questions.map((q, index) => (
@@ -49,7 +64,7 @@ const Faq = () => {
               />
             </button>
             {activeIndex === index && (
-              <p className="bg-labelme-wine p-4 rounded-md border-b border-labelme-pink-lighter mb-5 text-labelme-pink">
+              <p className="bg-labelme-wine p-4 rounded-md border-b border-labelme-pink-lighter mb-5 text-labelme-pink-lighter">
                 {q.answer}
               </p>
             )}

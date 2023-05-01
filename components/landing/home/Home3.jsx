@@ -1,5 +1,5 @@
-import Button from "../assets/Button";
-import Dropdown from "../assets/Dropdown";
+import Button from "../../assets/Button";
+import Dropdown from "../../assets/Dropdown";
 
 const FormBackgroundImage = () => {
   const onClickFn = () => {
@@ -32,12 +32,13 @@ const FormBackgroundImage = () => {
             />
             <Button
               otherStyles={
-                "mt-5 text-center w-full md:bg-labelme-wine bg-labelme-pink text-white text-bold"
+                "mt-5 text-center w-full bg-labelme-pink text-black text-bold"
               }
-              text="Get Started"
               type={"submit"}
               onClick={onClickFn}
-            />
+            >
+              Get Started
+            </Button>
           </div>
         </div>
       </div>

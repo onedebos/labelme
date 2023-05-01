@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Review from "../../public/home/review1.png";
+import Review from "../../../public/home/review1.png";
 
 const Reviews = () => {
   return (

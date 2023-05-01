@@ -8,11 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "labelme-wine": "#5A0912",
-        "labelme-pink": "#EA928E",
+        "labelme-wine": "#6a2b24",
+        "labelme-pink": "#9e1f63",
         "labelme-black": "#333333",
         "labelme-gray": "#EBEBEB",
-        "labelme-pink-lighter": "rgba(234, 146, 142, 0.17)",
+        "labelme-pink-lighter": "#eacfba",
       },
     },
   },

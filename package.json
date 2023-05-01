@@ -9,9 +9,13 @@
     "@headlessui/react": "^1.6.1",
     "@heroicons/react": "^1.0.6",
     "next": "latest",
+    "next-cloudinary": "^4.4.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.8.0"
+    "react-hook-form": "^7.43.9",
+    "react-icons": "^4.8.0",
+    "zustand": "^4.3.7",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@types/node": "18.11.3",

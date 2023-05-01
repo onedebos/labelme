@@ -4,6 +4,7 @@ import Image from "next/image";
 import Logo from "../../public/logos/logo2.svg";
 import { FaBars } from "react-icons/fa";
 import { HiUserCircle } from "react-icons/hi";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const Menu = ({ signedIn = true }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,11 +25,11 @@ const Menu = ({ signedIn = true }) => {
   };
 
   return (
-    <nav className="bg-white">
+    <nav className="bg-white border-b border-gray-100">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex md:grid md:grid-cols-3 items-center justify-between h-16">
           <div className="flex items-center">
-            <Link href={""}>
+            <Link href={"/"}>
               <Image
                 priority={true}
                 src={Logo}
@@ -70,22 +71,30 @@ const Menu = ({ signedIn = true }) => {
             <div className="hidden md:block">
               <div className="ml-10 flex justify-end items-baseline space-x-4">
                 <Link
-                  className="text-gray-800 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-800 hover:text-labelme-wine px-3 py-2 rounded-md text-sm font-medium"
                   href="/"
                 >
                   Start Creating
                 </Link>
                 <Link
-                  className="text-gray-800 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-800 hover:text-labelme-wine px-3 py-2 rounded-md text-sm font-medium"
                   href="/"
                 >
                   Sign Up
                 </Link>
                 <Link
-                  className="text-gray-800 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-800 hover:text-labelme-wine px-3 py-2 rounded-md text-sm font-medium"
                   href="/contact"
                 >
                   Sign in
+                </Link>
+
+                <Link
+                  className="text-gray-800 hover:text-labelme-wine text-sm font-medium inline-flex items-end justify-end"
+                  href="/cart"
+                >
+                  {" "}
+                  <AiOutlineShoppingCart className="h-8" size={"1.6em"} />
                 </Link>
               </div>
             </div>
