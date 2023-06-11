@@ -29,6 +29,8 @@ const Menu = ({}) => {
   useEffect(() => {
     const user = getLocally("user");
 
+    console.log(user);
+
     if (user.displayName) {
       setSignedIn(true);
     }
