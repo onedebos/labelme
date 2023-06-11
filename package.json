@@ -8,14 +8,16 @@
   "dependencies": {
     "@headlessui/react": "^1.6.1",
     "@heroicons/react": "^1.0.6",
+    "firebase": "^9.22.2",
+    "firebaseui": "^6.0.2",
     "next": "latest",
     "next-cloudinary": "^4.4.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.9",
     "react-icons": "^4.8.0",
-    "zustand": "^4.3.7",
-    "uuidv4": "^6.2.13"
+    "uuidv4": "^6.2.13",
+    "zustand": "^4.3.7"
   },
   "devDependencies": {
     "@types/node": "18.11.3",

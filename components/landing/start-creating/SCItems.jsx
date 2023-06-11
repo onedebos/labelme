@@ -1,18 +1,31 @@
+import { storeLocally } from "../../../helpers/helpers";
 import LinkButton from "../../assets/LinkButton";
-import { TbMathGreater } from "react-icons/tb";
 import Image from "next/image";
 
 const SCItems = ({
   title,
+  description,
   imgUrl,
   imgAlt,
-  description,
-  buyLink,
   nextStep,
-  stepContent,
+  stepNo,
+  step1Content,
+  step2Content,
+  step3Content,
+  step4Content,
 }) => {
   const formatTitle = (str) => {
     return str.split(" ").join("-").toLowerCase();
+  };
+
+  const saveSelectedItem = () => {
+    storeLocally("selectedItem", {
+      stepNo,
+      step1Content,
+      step2Content,
+      step3Content,
+      step4Content,
+    });
   };
   return (
     <div>
@@ -31,16 +44,22 @@ const SCItems = ({
           />{" "}
         </div>
       )}
-      <p className="mt-4 font-medium text-xl">{title}</p>
-      <p className="mt-4 max-w-xs md:mr-16">{description}</p>
+      <div className="md:h-40">
+        <p className="mt-4 font-medium text-xl">{title}</p>
+        <p className="mt-4 max-w-xs md:mr-16">{description}</p>
+      </div>
       <div className="mt-4 md:max-w-xs">
         <LinkButton
           href={{
-            pathname: `/start-creating/step/${formatTitle(title)}/${nextStep}`,
+            pathname: `/start-creating/${stepNo}/${formatTitle(
+              title
+            )}/${nextStep}`,
           }}
           classnames={`bg-labelme-wine hover:bg-labelme-pink transition ease-in-out text-white rounded-lg justify-center md:justify-start md:py-2 md:pl-6 flex items-center max-w-xs md:mr-14`}
+          onClick={saveSelectedItem}
         >
-          Start a {title} Line
+          {/* Start a  */}
+          {title} Line
         </LinkButton>
       </div>
     </div>

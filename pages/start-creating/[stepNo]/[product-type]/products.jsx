@@ -2,13 +2,15 @@ import StepsTemplate from "../../../../components/steps-template/StepsTemplate";
 import { useState, useEffect } from "react";
 import { getLocally } from "../../../../helpers/helpers";
 
-const StartCreatingStep = () => {
+const Products = () => {
   const [productsObject, setProductsObject] = useState("");
+  const [selectedItem, setSelectedItem] = useState("");
 
   useEffect(() => {
     let mounted = true;
     if (mounted) {
       setProductsObject(getLocally("products"));
+      setSelectedItem(getLocally("selectedItem"));
     }
 
     return () => {
@@ -18,9 +20,12 @@ const StartCreatingStep = () => {
 
   return (
     <div className="min-h-screen">
-      <StepsTemplate productsObject={productsObject} />
+      <StepsTemplate
+        productsObject={productsObject}
+        selectedItem={selectedItem}
+      />
     </div>
   );
 };
 
-export default StartCreatingStep;
+export default Products;

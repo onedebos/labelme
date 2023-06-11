@@ -20,4 +20,22 @@ const newID = () => {
   return id;
 };
 
-export { capitalize, storeLocally, getLocally, newID };
+const formatTitle = (str) => {
+  if (str) return str.split(" ").join("-").toLowerCase();
+};
+
+const formatFirebaseError = (msg) => {
+  let str = msg.split("/");
+  str = str[1].split("-").join(" ");
+  console.log(str);
+  return str;
+};
+
+export {
+  capitalize,
+  storeLocally,
+  getLocally,
+  newID,
+  formatTitle,
+  formatFirebaseError,
+};

@@ -1,15 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/logos/logo2.svg";
 import { FaBars } from "react-icons/fa";
 import { HiUserCircle } from "react-icons/hi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { getLocally } from "../../helpers/helpers";
 
-const Menu = ({ signedIn = true }) => {
+const Menu = ({}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showSignedInDropdown, setShowSignedInDropdown] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [signedIn, setSignedIn] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -23,6 +25,15 @@ const Menu = ({ signedIn = true }) => {
   const toggleSearch = () => {
     setSearchOpen(!searchOpen);
   };
+
+  useEffect(() => {
+    const user = getLocally("user");
+
+    if (user.displayName) {
+      setSignedIn(true);
+    }
+    return () => {};
+  }, []);
 
   return (
     <nav className="bg-white border-b border-gray-100">
@@ -78,13 +89,13 @@ const Menu = ({ signedIn = true }) => {
                 </Link>
                 <Link
                   className="text-gray-800 hover:text-labelme-wine px-3 py-2 rounded-md text-sm font-medium"
-                  href="/"
+                  href="/signup"
                 >
                   Sign Up
                 </Link>
                 <Link
                   className="text-gray-800 hover:text-labelme-wine px-3 py-2 rounded-md text-sm font-medium"
-                  href="/contact"
+                  href="/signin"
                 >
                   Sign in
                 </Link>
@@ -135,19 +146,19 @@ const Menu = ({ signedIn = true }) => {
                   </Link>
                   <Link
                     className="text-gray-800 hover:text-labelme-wine px-3 py-2 rounded-md text-sm font-medium"
-                    href="/"
+                    href="/orders"
                   >
                     Orders
                   </Link>
-                  <Link
+                  {/* <Link
                     className="text-gray-800 hover:text-labelme-wine px-3 py-2 rounded-md text-sm font-medium"
                     href="/"
                   >
                     Settings
-                  </Link>
+                  </Link> */}
                   <Link
                     className="text-gray-800 hover:text-labelme-wine px-3 py-2 rounded-md text-sm font-medium"
-                    href="/"
+                    href="/checkout"
                   >
                     Cart
                   </Link>
@@ -212,20 +223,20 @@ const Menu = ({ signedIn = true }) => {
         <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-1 border flex flex-col">
             <Link
-              className="text-gray-800 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+              className="text-gray-800 hover:text-labelme-wine px-3 py-2 rounded-md text-sm font-medium"
               href="/"
             >
               Start Creating
             </Link>
             <Link
-              className="text-gray-800 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-              href="/"
+              className="text-gray-800 hover:text-labelme-wine px-3 py-2 rounded-md text-sm font-medium"
+              href="/signup"
             >
               Sign Up
             </Link>
             <Link
-              className="text-gray-800 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-              href="/contact"
+              className="text-gray-800 hover:text-labelme-wine px-3 py-2 rounded-md text-sm font-medium"
+              href="/signin"
             >
               Sign in
             </Link>
@@ -247,19 +258,19 @@ const Menu = ({ signedIn = true }) => {
             </Link>
             <Link
               className="text-gray-800 hover:text-labelme-wine px-3 py-2 rounded-md text-sm font-medium"
-              href="/"
+              href="/orders"
             >
               Orders
             </Link>
-            <Link
+            {/* <Link
               className="text-gray-800 hover:text-labelme-wine px-3 py-2 rounded-md text-sm font-medium"
               href="/"
             >
               Settings
-            </Link>
+            </Link> */}
             <Link
               className="text-gray-800 hover:text-labelme-wine px-3 py-2 rounded-md text-sm font-medium pb-8"
-              href="/"
+              href="/checkout"
             >
               Cart
             </Link>

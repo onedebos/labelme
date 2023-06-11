@@ -1,6 +1,6 @@
 import { TbMathGreater } from "react-icons/tb";
 import Image from "next/image";
-import { capitalize } from "../../helpers/helpers";
+import { capitalize, formatTitle } from "../../helpers/helpers";
 import { useRouter } from "next/router";
 import Button from "../assets/Button";
 import { useStore } from "../../helpers/store";
@@ -14,6 +14,7 @@ const NestedProduct = ({
   nextStep,
   productType,
   totalSteps,
+  id,
 }) => {
   const router = useRouter();
   const { cart, addToCart, cartItem, addCartItem } = useStore();
@@ -96,9 +97,15 @@ const NestedProduct = ({
     console.log({ cartItem });
   };
 
-  const goToNextStep = (productTypes, nextSteps) => {
-    if (nextStep != "cart") {
-      router.push(`/start-creating/step/${productTypes}/${nextSteps}`);
+  const goToNextStep = () => {
+    const { nextStepNo, nextSteps } = nextStep;
+
+    console.log({ nextStepNo, nextSteps, productType });
+
+    if (nextSteps != "") {
+      router.push(
+        `/start-creating/${nextStepNo}/${formatTitle(productType)}/${nextSteps}`
+      );
     } else {
       router.push("/cart");
     }
@@ -107,7 +114,7 @@ const NestedProduct = ({
   };
 
   return (
-    <div>
+    <div key={id}>
       {!imgUrl ? (
         <div className="h-40 w-40 bg-gray-600 text-center"></div>
       ) : (
@@ -125,9 +132,10 @@ const NestedProduct = ({
       )}
       <p className="mt-4 font-medium text-xl">{capitalize(title)}</p>
       <p className="mt-4 max-w-xs md:mr-16 text-clip">{description}</p>
-      <div className="mt-4 md:max-w-xs">
+      <div className="mt-4 md:mb-10 md:max-w-xs">
         <Button
-          onClick={() => goToNextStep(productType, nextStep)}
+          // onClick={() => goToNextStep(productType, nextStep, stepNo)}
+          onClick={() => goToNextStep()}
           otherStyles={`bg-labelme-wine hover:bg-labelme-pink transition ease-in-out text-white rounded-lg justify-center md:justify-start md:py-2 md:pl-6 flex items-center max-w-xs md:w-full md:mr-14 `}
         >
           Continue with {capitalize(title)}{" "}

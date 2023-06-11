@@ -1,90 +1,91 @@
 import { useRouter } from "next/router";
 import { useEffect, useState, useMemo, useRef } from "react";
 import ProductSteps from "./ProductSteps";
-import { capitalize } from "../../helpers/helpers";
 
-const StepsTemplate = ({ productsObject }) => {
-  const [stepContent, setStepContent] = useState("");
-  const [stepNoc, setStepNoc] = useState("");
-  const ref = useRef(0);
-  const stepNoRef = useRef(0);
-  const nextStepRef = useRef(null);
-  const prevStepRef = useRef(null);
+const StepsTemplate = ({ productsObject, selectedItem }) => {
+  const [selectedItemInfo, setSelectedItemInfo] = useState("");
   const totalStepsRef = useRef(null);
 
   const router = useRouter();
-  let stepName = router.asPath.split("/");
-  let productType = stepName[stepName.length - 2];
-  stepName = stepName[stepName.length - 1];
+  let stepNoFromRouter = router.asPath.split("/");
+  stepNoFromRouter = stepNoFromRouter[2];
 
-  const getNextStep = (steps) => {
-    const totalSteps = steps?.length;
-    totalStepsRef.current = totalSteps;
-    const currStep = steps?.indexOf(stepName) + 1;
-    let nextStep = "cart";
+  const getNextStep = () => {
+    let nextStepNo = 0;
+    let nextSteps = "";
 
-    if (currStep < totalSteps) {
-      nextStep = steps[currStep];
+    if (productsObject) {
+      productsObject.find((product, index) => {
+        if (product.title == selectedItemInfo.category) {
+          const currStepNo = product.steps.indexOf(selectedItemInfo.stepName);
+          nextStepNo = currStepNo + 2;
+
+          if (nextStepNo > product.steps.length) {
+            nextSteps == "cart";
+
+            return;
+          } else {
+            nextSteps = product.steps[currStepNo + 1];
+            return;
+          }
+        }
+      });
+
+      return { nextStepNo, nextSteps };
     }
-
-    nextStepRef.current = nextStep;
-    return;
   };
 
-  const getPrevStep = (steps) => {
-    const currStep = steps?.indexOf(stepName) + 1;
-    const stepBack = steps?.indexOf(stepName) - 1;
-    let prevStep = "/";
+  const getPrevStep = () => {
+    let prevStepNo = 0;
+    let prevSteps = "";
 
-    if (currStep - 1 == 0) {
-      prevStep = "/";
-    } else {
-      prevStep = steps[stepBack];
+    if (productsObject) {
+      productsObject.find((product, index) => {
+        if (product.title == selectedItemInfo.category) {
+          const currStepNo = product.steps.indexOf(selectedItemInfo.stepName);
+          prevStepNo = currStepNo + 2;
+
+          if (prevStepNo > product.steps.length) {
+            prevSteps == "cart";
+            return;
+          } else {
+            prevSteps = product.steps[currStepNo + 1];
+            return;
+          }
+        }
+      });
+
+      return { prevStepNo, prevSteps };
     }
-
-    prevStepRef.current = prevStep;
-    return;
   };
 
-  const getStepNo = () => {
-    let stepNo;
-    let stepContentObj;
-
-    productsObject.map((product) => {
-      if (product.title == capitalize(productType)) {
-        getNextStep(product.steps);
-        getPrevStep(product.steps);
-        stepNo = product.steps.indexOf(stepName);
-        stepNoRef.current = stepNo;
-        setStepNoc(stepNoRef.current + 1);
-
-        stepContentObj = product.stepContent[stepNo];
-        ref.current = stepContentObj;
-        setStepContent(ref.current);
-      }
-    });
+  const getSelectedItemInfo = () => {
+    const item = selectedItem["step" + stepNoFromRouter + "Content"];
+    setSelectedItemInfo(item);
   };
 
   useEffect(() => {
     let mounted = true;
     if (mounted) {
-      if (productsObject) {
-        getStepNo();
+      if (selectedItem) {
+        getSelectedItemInfo();
       }
     }
-  }, [productsObject, getStepNo]);
+  }, [selectedItem]);
+
+  console.log({ selectedItemInfo, productsObject, selectedItem });
 
   return (
     <div>
-      {productsObject && (
+      {selectedItem && (
         <ProductSteps
-          stepName={stepName}
-          productType={productType}
-          stepNo={stepNoc && stepNoc}
-          nestedProducts={stepContent && stepContent}
-          nextStep={nextStepRef.current && nextStepRef.current}
-          prevStep={prevStepRef.current && prevStepRef.current}
-          currStep={stepName}
+          stepName={selectedItemInfo.stepName ? selectedItemInfo.stepName : ""}
+          productType={selectedItemInfo.category && selectedItemInfo.category}
+          stepNo={selectedItemInfo.stepNo}
+          nestedProducts={selectedItemInfo.stepOptions}
+          nextStep={getNextStep()}
+          prevStep={getPrevStep()}
+          currStep={selectedItemInfo.stepName}
           totalSteps={totalStepsRef.current && totalStepsRef.current}
         />
       )}

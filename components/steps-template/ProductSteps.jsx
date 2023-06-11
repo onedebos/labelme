@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { capitalize } from "../../helpers/helpers";
+import { capitalize, formatTitle, newID } from "../../helpers/helpers";
 import NestedProduct from "./NestedProduct";
 
 const ProductSteps = ({
@@ -12,6 +12,7 @@ const ProductSteps = ({
   currStep,
   totalSteps,
 }) => {
+  const { prevStepNo, prevSteps } = prevStep;
   return (
     <div className="pb-10">
       <p className="ml-5 md:mx-10 mt-10 text-md">Step {stepNo}</p>
@@ -22,15 +23,15 @@ const ProductSteps = ({
 
       <p className="ml-5 md:mx-10 mt-2">
         To continue building your{" "}
-        <span className="font-semibold text-labelme-pink">
-          {capitalize(productType)}
-        </span>{" "}
+        <span className="font-semibold text-labelme-pink">{productType}</span>{" "}
         line.{" "}
         <Link
           href={
             prevStep == "/"
               ? "/"
-              : `/start-creating/step/${productType}/${prevStep}`
+              : `/start-creating/${prevStepNo}/${formatTitle(
+                  productType
+                )}/${prevSteps}`
           }
           className="text-labelme-pink md:ml-3 block md:inline-block"
         >
@@ -39,17 +40,18 @@ const ProductSteps = ({
       </p>
 
       {nestedProducts && (
-        <div className="ml-5 md:mx-10 flex flex-col md:grid md:grid-cols-4 space-y-10 md:space-y-0 md:space-x-5 mt-10 grid-flow-col-dense">
-          {nestedProducts.stepOptions.map((nestedProduct) => (
+        <div className="ml-5 md:mx-10 flex flex-col md:grid md:grid-cols-4 space-y-10 md:space-y-0 mt-10">
+          {nestedProducts.map((nestedProduct) => (
             <NestedProduct
               imgUrl={nestedProduct.imgURL}
               description={nestedProduct.description}
               title={nestedProduct.title}
               imgAlt={nestedProduct.imgAlt}
-              nextStep={nextStep}
               productType={productType}
+              nextStep={nextStep}
               currStep={currStep}
               totalSteps={totalSteps}
+              id={newID}
             />
           ))}
         </div>
