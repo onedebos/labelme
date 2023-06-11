@@ -27,14 +27,19 @@ const Menu = () => {
   };
 
   useEffect(() => {
-    const user = getLocally("user");
-    if (user) {
-      if (user.displayName) {
-        setSignedIn(true);
+    let mounted = true;
+    if (mounted) {
+      const user = getLocally("user");
+      if (user) {
+        if (user.displayName) {
+          setSignedIn(true);
+        }
       }
     }
 
-    return () => {};
+    return () => {
+      mounted = false;
+    };
   }, []);
 
   return (
