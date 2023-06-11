@@ -28,10 +28,12 @@ const Menu = () => {
 
   useEffect(() => {
     const user = getLocally("user");
-    console.log(user);
-    if (user && user.displayName) {
-      setSignedIn(true);
+    if (user) {
+      if (user.displayName) {
+        setSignedIn(true);
+      }
     }
+
     return () => {};
   }, []);
 

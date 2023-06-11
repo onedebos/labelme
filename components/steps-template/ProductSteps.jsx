@@ -13,6 +13,8 @@ const ProductSteps = ({
   totalSteps,
 }) => {
   const { prevStepNo, prevSteps } = prevStep;
+
+  console.log({ prevSteps });
   return (
     <div className="pb-10">
       <p className="ml-5 md:mx-10 mt-10 text-md">Step {stepNo}</p>
