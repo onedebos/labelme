@@ -24,7 +24,7 @@
 // Toilet cleaner
 
 import SCItems from "./SCItems";
-import { storeLocally } from "../../../helpers/helpers";
+import { newID, storeLocally } from "../../../helpers/helpers";
 import { products } from "../../../helpers/products";
 import { useEffect } from "react";
 
@@ -42,20 +42,22 @@ const StartCreatingProducts = () => {
 
       <div className="flex flex-col md:grid md:grid-cols-4 space-y-10 md:space-y-0 md:space-x-5 mt-10 grid-flow-col-dense">
         {products.map((product, key) => (
-          <SCItems
-            title={product.title}
-            description={product.description}
-            imgAlt={product.alt}
-            imgUrl={product.imgUrl}
-            // buyLink={product.buyLink}
-            nextStep={product.steps[0]}
-            stepContent={product.stepContent}
-            stepNo={1}
-            step1Content={product.stepContent[0] && product.stepContent[0]}
-            step2Content={product.stepContent[1] && product.stepContent[1]}
-            step3Content={product.stepContent[2] && product.stepContent[2]}
-            step4Content={product.stepContent[3] && product.stepContent[3]}
-          />
+          <div key={key}>
+            <SCItems
+              title={product.title}
+              description={product.description}
+              imgAlt={product.alt}
+              imgUrl={product.imgUrl}
+              // buyLink={product.buyLink}
+              nextStep={product.steps[0]}
+              stepContent={product.stepContent}
+              stepNo={1}
+              step1Content={product.stepContent[0] && product.stepContent[0]}
+              step2Content={product.stepContent[1] && product.stepContent[1]}
+              step3Content={product.stepContent[2] && product.stepContent[2]}
+              step4Content={product.stepContent[3] && product.stepContent[3]}
+            />
+          </div>
         ))}
       </div>
     </div>

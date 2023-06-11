@@ -11,6 +11,6 @@ module.exports = {
   // ],
 
   images: {
-    domains: ["scontent-los2-1.cdninstagram.com"],
+    domains: ["scontent-los2-1.cdninstagram.com", "res.cloudinary.com"],
   },
 };

@@ -1,4 +1,4 @@
-import { storeLocally } from "../../../helpers/helpers";
+import { storeLocally, newID } from "../../../helpers/helpers";
 import LinkButton from "../../assets/LinkButton";
 import Image from "next/image";
 
@@ -28,7 +28,7 @@ const SCItems = ({
     });
   };
   return (
-    <div>
+    <div key={newID}>
       {!imgUrl ? (
         <div className="h-40 w-40 bg-gray-600 text-center"></div>
       ) : (

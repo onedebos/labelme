@@ -20,9 +20,15 @@ const FormBackgroundImage = () => {
 
             <p className="font-md mt-5">Select a Product</p>
             <Dropdown
-              selected={"Lipgloss"}
+              selected={"Beauty"}
               option1={"Lip-gloss"}
-              option1Val={"Lip-gloss"}
+              option1Val={"beauty"}
+              option2={"Body"}
+              option2Val={"body"}
+              option3={"Hair Care"}
+              option3Val={"haircare"}
+              option4={"Home care"}
+              option4Val={"homecare"}
             />
             <p className="font-md mt-5">When do you want to launch?</p>
             <Dropdown
@@ -31,7 +37,7 @@ const FormBackgroundImage = () => {
               option1Val={"Within 7 Days"}
             />
             <button
-              className={`text-white px-10 md:py-2 rounded-md flex items-center justify-center gap-2 text-center mt-5 w-full  text-bold bg-labelme-wine py-3 `}
+              className={`text-white px-10 md:py-2 rounded-md flex items-center justify-center gap-2 text-center mt-5 w-full  text-bold bg-labelme-pink md:bg-labelme-wine py-3 `}
               type={"submit"}
               onClick={onClickFn}
             >

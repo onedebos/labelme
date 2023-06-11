@@ -9,6 +9,10 @@ const storeLocally = (key, item) => {
   localStorage.setItem(key, JSON.stringify(item));
 };
 
+const clearStorage = () => {
+  localStorage.clear();
+};
+
 const getLocally = (key) => {
   let items = localStorage.getItem(key);
   items = JSON.parse(items);
@@ -38,4 +42,5 @@ export {
   newID,
   formatTitle,
   formatFirebaseError,
+  clearStorage,
 };

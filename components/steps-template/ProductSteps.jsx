@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { capitalize, formatTitle, newID } from "../../helpers/helpers";
 import NestedProduct from "./NestedProduct";
+import { useRouter } from "next/router";
 
 const ProductSteps = ({
   nestedProducts,
@@ -13,8 +14,13 @@ const ProductSteps = ({
   totalSteps,
 }) => {
   const { prevStepNo, prevSteps } = prevStep;
+  const router = useRouter();
 
-  console.log({ prevSteps });
+  const goBackUrl = () => {
+    return router.back();
+  };
+
+  // console.log({ prevStep, nextStep, stepNo, stepName, currStep, totalSteps });
   return (
     <div className="pb-10">
       <p className="ml-5 md:mx-10 mt-10 text-md">Step {stepNo}</p>
@@ -27,9 +33,9 @@ const ProductSteps = ({
         To continue building your{" "}
         <span className="font-semibold text-labelme-pink">{productType}</span>{" "}
         line.{" "}
-        <Link
+        {/* <Link
           href={
-            prevStep == "/"
+            prevSteps == "/"
               ? "/"
               : `/start-creating/${prevStepNo}/${formatTitle(
                   productType
@@ -38,7 +44,10 @@ const ProductSteps = ({
           className="text-labelme-pink md:ml-3 block md:inline-block"
         >
           Go back
-        </Link>
+        </Link> */}
+        <button className="font-semibold text-labelme-pink" onClick={goBackUrl}>
+          Go back
+        </button>
       </p>
 
       {nestedProducts && (

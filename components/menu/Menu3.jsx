@@ -5,13 +5,16 @@ import Logo from "../../public/logos/logo2.svg";
 import { FaBars } from "react-icons/fa";
 import { HiUserCircle } from "react-icons/hi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { getLocally } from "../../helpers/helpers";
+import { clearStorage, getLocally } from "../../helpers/helpers";
+import { signOutUser } from "../../helpers/firebase";
+import { useRouter } from "next/router";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showSignedInDropdown, setShowSignedInDropdown] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [signedIn, setSignedIn] = useState(false);
+  const router = useRouter();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -26,6 +29,11 @@ const Menu = () => {
     setSearchOpen(!searchOpen);
   };
 
+  const logout = async () => {
+    await signOutUser();
+    clearStorage();
+    router.push("/");
+  };
   useEffect(() => {
     let mounted = true;
     if (mounted) {
@@ -171,12 +179,12 @@ const Menu = () => {
                   </Link>
 
                   <div className="border-t border-1 mt-4 py-3">
-                    <Link
+                    <button
                       className="text-gray-900 hover:text-labelme-wine px-3 py-2 rounded-md text-sm font-medium"
-                      href="/"
+                      onClick={logout}
                     >
                       Logout
-                    </Link>
+                    </button>
                   </div>
                 </div>
               )}
@@ -283,12 +291,12 @@ const Menu = () => {
             </Link>
 
             <div className="border-t w-full border-1 border-gray-300 px-3 py-2 pb-3">
-              <Link
+              <button
                 className="text-gray-900 hover:text-labelme-wine px-0 py-2 pb-4 rounded-md text-sm font-medium mt-2"
-                href="/"
+                onClick={logout}
               >
                 Logout
-              </Link>
+              </button>
             </div>
           </div>
         </div>

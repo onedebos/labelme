@@ -4,7 +4,7 @@ export const products = [
     description:
       "Choose from over 40 lipgloss shades and flavors to create a unique expeirence or your customers.",
     imgUrl:
-      "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+      "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
     buyLink: "",
     steps: ["products", "packaging", "flavor"],
     stepContent: [
@@ -17,43 +17,43 @@ export const products = [
             title: "Lipgloss",
             description: "this is product 1",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Lip Oil",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Lip Butter",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Chapstick",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Lip Liner",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Lip Scrub",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Rose water",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
         ],
       },
@@ -66,13 +66,13 @@ export const products = [
             title: "packaging 1",
             description: "this is packaging 1",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "packaging 2",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
         ],
       },
@@ -85,13 +85,13 @@ export const products = [
             title: "flavor 1",
             description: "this is flavor 1",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "flavor 2",
             description: "this is flavor 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
         ],
       },
@@ -101,7 +101,7 @@ export const products = [
     title: "Body Care",
     description: "Body Care for you!.",
     imgUrl:
-      "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+      "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
     buyLink: "",
     // steps: ["products", "packaging", "label"],
     steps: ["products", "packaging", "flavor"],
@@ -116,43 +116,43 @@ export const products = [
             title: "Lipgloss",
             description: "this is product 1",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Lip Oil",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Lip Butter",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Chapstick",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Lip Liner",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Lip Scrub",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Rose water",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
         ],
       },
@@ -165,13 +165,13 @@ export const products = [
             title: "packaging 1",
             description: "this is packaging 1",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "packaging 2",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
         ],
       },
@@ -184,13 +184,13 @@ export const products = [
             title: "flavor 1",
             description: "this is flavor 1",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "flavor 2",
             description: "this is flavor 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
         ],
       },
@@ -202,7 +202,7 @@ export const products = [
     description:
       "Choose from Hair Oil, Hair conditioner, hair shampoo, beard oil, beard butter and more.",
     imgUrl:
-      "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+      "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
     buyLink: "",
     steps: ["products", "packaging", "flavor"],
     stepContent: [
@@ -215,43 +215,43 @@ export const products = [
             title: "Lipgloss",
             description: "this is product 1",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Lip Oil",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Lip Butter",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Chapstick",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Lip Liner",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Lip Scrub",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Rose water",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
         ],
       },
@@ -264,13 +264,13 @@ export const products = [
             title: "packaging 1",
             description: "this is packaging 1",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "packaging 2",
             description: "this is packaging 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
         ],
       },
@@ -283,13 +283,13 @@ export const products = [
             title: "flavor 1",
             description: "this is flavor 1",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "flavor 2",
             description: "this is flavor 2",
             imgURL:
-              "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
         ],
       },
@@ -301,7 +301,7 @@ export const products = [
   //     description:
   //       "Choose from over 40 lipgloss shades and flavors to create a unique expeirence or your customers.",
   //     imgUrl:
-  //       "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+  //       "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
   //     buyLink: "",
   //     steps: ["products", "packaging"],
   //     stepContent: [
@@ -313,25 +313,25 @@ export const products = [
   //             title: "Body Scrub",
   //             description: "this is product 1",
   //             imgURL:
-  //               "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
   //           },
   //           {
   //             title: "Body butter",
   //             description: "this is packaging 2",
   //             imgURL:
-  //               "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
   //           },
   //           {
   //             title: "Body oil",
   //             description: "this is packaging 2",
   //             imgURL:
-  //               "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
   //           },
   //           {
   //             title: "Hand Cream",
   //             description: "this is packaging 2",
   //             imgURL:
-  //               "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
   //           },
   //         ],
   //       },
@@ -344,7 +344,7 @@ export const products = [
   //             title: "packaging 1 liner",
   //             description: "this is packaging 1",
   //             imgURL:
-  //               "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
   //           },
   //           {
   //             title: "packaging 2 liner",
@@ -362,7 +362,7 @@ export const products = [
   //     description:
   //       "Choose from over 40 lipgloss shades and flavors to create a unique expeirence or your customers. ",
   //     imgUrl:
-  //       "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+  //       "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
   //     buyLink: "",
   //     steps: ["shade"],
   //     stepContent: [
@@ -375,7 +375,7 @@ export const products = [
   //             description:
   //               "MAUVE is a tinted wine shade. A mixture of dark purple and dark wine. She’s berry and grape scented🍇",
   //             imgURL:
-  //               "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
   //           },
   //           {
   //             title: "Berry Shine",
@@ -394,7 +394,7 @@ export const products = [
   //     description:
   //       "Choose from over 40 lipgloss shades and flavors to create a unique expeirence or your customers.",
   //     imgUrl:
-  //       "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+  //       "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
   //     buyLink: "",
   //     steps: ["packaging", "shade", "flavor"],
   //     stepContent: [
@@ -406,7 +406,7 @@ export const products = [
   //             title: "packaging 1 liner",
   //             description: "this is packaging 1",
   //             imgURL:
-  //               "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
   //           },
   //           {
   //             title: "packaging 2 liner",
@@ -425,7 +425,7 @@ export const products = [
   //             title: "shade 1 liner",
   //             description: "this is shade 1",
   //             imgURL:
-  //               "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
   //           },
   //           {
   //             title: "shade 2 liner",
@@ -444,7 +444,7 @@ export const products = [
   //             title: "flavor 1 liner",
   //             description: "this is flavor 1",
   //             imgURL:
-  //               "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/341844942_933169231136780_2326713536018109483_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=5cbhmieXbLQAX-FBsCB&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA4MzU4MDUzMjkwNTQwNTIyNQ%3D%3D.2-ccb7-5&oh=00_AfCQ-p53fVr3_sJQ8a1OD3S5MRYo63-uyT6hMXZ40gGEzA&oe=64548A51&_nc_sid=6136e7",
+  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
   //           },
   //           {
   //             title: "flavor 2 liner",

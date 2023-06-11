@@ -38,23 +38,28 @@ const StepsTemplate = ({ productsObject, selectedItem }) => {
   const getPrevStep = () => {
     let prevStepNo = 0;
     let prevSteps = "";
+    let pStep = 0;
 
     if (productsObject) {
       productsObject.find((product, index) => {
         if (product.title == selectedItemInfo.category) {
-          const currStepNo = product.steps.indexOf(selectedItemInfo.stepName);
-          prevStepNo = currStepNo + 2;
+          const currStepNo =
+            product.steps.indexOf(selectedItemInfo.stepName) + 1;
 
-          if (prevStepNo > product.steps.length) {
-            prevSteps == "cart";
+          prevStepNo = currStepNo - 1;
+
+          if (prevStepNo == 0) {
+            prevSteps == "/";
             return;
-          } else {
-            prevSteps = product.steps[currStepNo + 1];
+          } else if (currStepNo > 0) {
+            prevSteps = product.steps[prevStepNo - 1];
+            pStep = prevStepNo - 1;
             return;
           }
         }
       });
 
+      console.log({ prevStepNo, prevSteps, pStep });
       return { prevStepNo, prevSteps };
     }
   };
