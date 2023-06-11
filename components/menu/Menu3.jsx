@@ -7,7 +7,7 @@ import { HiUserCircle } from "react-icons/hi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { getLocally } from "../../helpers/helpers";
 
-const Menu = ({}) => {
+const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showSignedInDropdown, setShowSignedInDropdown] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -28,10 +28,8 @@ const Menu = ({}) => {
 
   useEffect(() => {
     const user = getLocally("user");
-
     console.log(user);
-
-    if (user.displayName) {
+    if (user && user.displayName) {
       setSignedIn(true);
     }
     return () => {};
