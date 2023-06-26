@@ -35,6 +35,15 @@ const formatFirebaseError = (msg) => {
   return str;
 };
 
+const increaseStep = (currStep) => {
+  const step = getLocally("step");
+  if (!step) {
+    storeLocally("step", { stepNo: 1, currStep });
+  } else {
+    storeLocally("step", { stepNo: step.stepNo + 1, currStep });
+  }
+};
+
 export {
   capitalize,
   storeLocally,
@@ -43,4 +52,5 @@ export {
   formatTitle,
   formatFirebaseError,
   clearStorage,
+  increaseStep,
 };

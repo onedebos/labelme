@@ -1,116 +1,35 @@
 import { TbMathGreater } from "react-icons/tb";
 import Image from "next/image";
-import { capitalize, formatTitle } from "../../helpers/helpers";
+import {
+  capitalize,
+  formatTitle,
+  getLocally,
+  storeLocally,
+} from "../../helpers/helpers";
 import { useRouter } from "next/router";
 import Button from "../assets/Button";
 import { useStore } from "../../helpers/store";
+import Link from "next/link";
 
 const NestedProduct = ({
   title,
   imgUrl,
   imgAlt,
   description,
-  currStep,
   nextStep,
-  productType,
   totalSteps,
   id,
 }) => {
   const router = useRouter();
   const { cart, addToCart, cartItem, addCartItem } = useStore();
 
-  const addOrUpdateCartItem = () => {
-    let packagingTitle;
-    let packagingDescription;
-    let shadeTitle;
-    let shadeDescription;
-    let labelTitle;
-    let labelDescription;
-    let flavorTitle;
-    let flavorDescription;
+  const buildCartItem = (object) => {
+    addCartItem(object);
+    const { category } = getLocally("selectedItem");
 
-    let oldObj = { ...cartItem };
+    const product = { object, totalSteps };
 
-    if (oldObj.productType !== productType) {
-      oldObj = {};
-    }
-
-    switch (currStep) {
-      case "packaging":
-        packagingTitle = title;
-        packagingDescription = description;
-        addCartItem({
-          ...oldObj,
-          packagingTitle,
-          packagingDescription,
-          productType,
-          totalSteps,
-          packagingImgUrl: imgUrl,
-          packagingImgAlt: imgAlt,
-        });
-        break;
-      case "label":
-        labelTitle = title;
-        labelDescription = description;
-        addCartItem({
-          ...oldObj,
-          labelTitle,
-          labelDescription,
-          productType,
-          totalSteps,
-          labelImgUrl: imgUrl,
-          labelImgAlt: imgAlt,
-        });
-        break;
-
-      case "shade":
-        shadeTitle = title;
-        shadeDescription = description;
-        addCartItem({
-          ...oldObj,
-          shadeTitle,
-          shadeDescription,
-          productType,
-          totalSteps,
-          shadeImgUrl: imgUrl,
-          shadeImgAlt: imgAlt,
-        });
-        break;
-      case "flavor":
-        flavorTitle = title;
-        flavorDescription = description;
-        addCartItem({
-          ...oldObj,
-          flavorTitle,
-          flavorDescription,
-          productType,
-          totalSteps,
-          flavorImgUrl: imgUrl,
-          flavorImgAlt: imgAlt,
-        });
-        break;
-
-      default:
-        break;
-    }
-
-    console.log({ cartItem });
-  };
-
-  const goToNextStep = () => {
-    const { nextStepNo, nextSteps } = nextStep;
-
-    console.log({ nextStepNo, nextSteps, productType });
-
-    if (nextSteps != "") {
-      router.push(
-        `/start-creating/${nextStepNo}/${formatTitle(productType)}/${nextSteps}`
-      );
-    } else {
-      router.push("/cart");
-    }
-
-    addOrUpdateCartItem();
+    storeLocally("selectedItem", { category, product: product });
   };
 
   return (
@@ -133,14 +52,30 @@ const NestedProduct = ({
       <p className="mt-4 font-medium text-xl">{capitalize(title)}</p>
       <p className="mt-4 max-w-xs md:mr-16 text-clip">{description}</p>
       <div className="mt-4 md:mb-10 md:max-w-xs">
-        <Button
+        <Link
+          onClick={() =>
+            buildCartItem({
+              stepName: "product",
+              id,
+              title,
+              imgUrl,
+              description,
+            })
+          }
+          href={`/start-creating/1/1/${nextStep}`}
+          // href={"#"}
+        >
+          Continue with {capitalize(title)}{" "}
+        </Link>
+        {/* <Button
           // onClick={() => goToNextStep(productType, nextStep, stepNo)}
           onClick={() => goToNextStep()}
           otherStyles={`bg-labelme-wine hover:bg-labelme-pink transition ease-in-out text-white rounded-lg justify-center md:justify-start md:py-2 md:pl-6 flex items-center max-w-xs md:w-full md:mr-14 `}
         >
           Continue with {capitalize(title)}{" "}
-          {/* <TbMathGreater size={"1em"} className="ml-2" /> */}
-        </Button>
+        
+        </Button> 
+        */}
       </div>
     </div>
   );

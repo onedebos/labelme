@@ -6,7 +6,7 @@ export const products = [
     imgUrl:
       "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
     buyLink: "",
-    steps: ["products", "packaging", "flavor"],
+    steps: ["products", "tube", "shade", "label"],
     stepContent: [
       {
         stepNo: 1,
@@ -21,37 +21,37 @@ export const products = [
           },
           {
             title: "Lip Oil",
-            description: "this is packaging 2",
+            description: "this is product 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Lip Butter",
-            description: "this is packaging 2",
+            description: "this is product 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Chapstick",
-            description: "this is packaging 2",
+            description: "this is product 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Lip Liner",
-            description: "this is packaging 2",
+            description: "this is product 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Lip Scrub",
-            description: "this is packaging 2",
+            description: "this is product 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
             title: "Rose water",
-            description: "this is packaging 2",
+            description: "this is product 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
@@ -60,17 +60,17 @@ export const products = [
       {
         stepNo: 2,
         category: "Beauty",
-        stepName: "packaging",
+        stepName: "tube",
         stepOptions: [
           {
-            title: "packaging 1",
-            description: "this is packaging 1",
+            title: "tube 1",
+            description: "this is tube 1",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
-            title: "packaging 2",
-            description: "this is packaging 2",
+            title: "tube 2",
+            description: "this is tube 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
@@ -90,6 +90,25 @@ export const products = [
           {
             title: "flavor 2",
             description: "this is flavor 2",
+            imgURL:
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
+          },
+        ],
+      },
+      {
+        stepNo: 4,
+        stepName: "label",
+        category: "Beauty",
+        stepOptions: [
+          {
+            title: "label 1",
+            description: "this is label 1",
+            imgURL:
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
+          },
+          {
+            title: "label 2",
+            description: "this is label 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
@@ -103,8 +122,7 @@ export const products = [
     imgUrl:
       "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
     buyLink: "",
-    // steps: ["products", "packaging", "label"],
-    steps: ["products", "packaging", "flavor"],
+    steps: ["products", "jar", "scrub", "label"],
     stepContent: [
       {
         stepNo: 1,
@@ -113,43 +131,25 @@ export const products = [
 
         stepOptions: [
           {
-            title: "Lipgloss",
+            title: "Body Scrub",
             description: "this is product 1",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
-            title: "Lip Oil",
+            title: "Body Butter",
             description: "this is packaging 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
-            title: "Lip Butter",
+            title: "Body Oil",
             description: "this is packaging 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
-            title: "Chapstick",
-            description: "this is packaging 2",
-            imgURL:
-              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-          },
-          {
-            title: "Lip Liner",
-            description: "this is packaging 2",
-            imgURL:
-              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-          },
-          {
-            title: "Lip Scrub",
-            description: "this is packaging 2",
-            imgURL:
-              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-          },
-          {
-            title: "Rose water",
+            title: "Hand Cream",
             description: "this is packaging 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
@@ -158,18 +158,18 @@ export const products = [
       },
       {
         stepNo: 2,
-        stepName: "packaging",
+        stepName: "jar",
         category: "Body Care",
         stepOptions: [
           {
-            title: "packaging 1",
-            description: "this is packaging 1",
+            title: "jar 1",
+            description: "this is jar 1",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
-            title: "packaging 2",
-            description: "this is packaging 2",
+            title: "jar 2",
+            description: "this is jar 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
@@ -177,18 +177,37 @@ export const products = [
       },
       {
         stepNo: 3,
-        stepName: "flavor",
+        stepName: "scrub",
         category: "Body Care",
         stepOptions: [
           {
-            title: "flavor 1",
-            description: "this is flavor 1",
+            title: "scrub 1",
+            description: "this is scrub 1",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
-            title: "flavor 2",
-            description: "this is flavor 2",
+            title: "scrub 2",
+            description: "this is scrub 2",
+            imgURL:
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
+          },
+        ],
+      },
+      {
+        stepNo: 4,
+        stepName: "label",
+        category: "Body Care",
+        stepOptions: [
+          {
+            title: "label 1",
+            description: "this is label 1",
+            imgURL:
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
+          },
+          {
+            title: "label 2",
+            description: "this is label 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
@@ -204,7 +223,7 @@ export const products = [
     imgUrl:
       "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
     buyLink: "",
-    steps: ["products", "packaging", "flavor"],
+    steps: ["products", "bottle", "oil", "label"],
     stepContent: [
       {
         stepNo: 1,
@@ -212,43 +231,25 @@ export const products = [
         stepName: "products",
         stepOptions: [
           {
-            title: "Lipgloss",
+            title: "Hair Conditioner",
             description: "this is product 1",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
-            title: "Lip Oil",
+            title: "Hair Shampoo",
             description: "this is packaging 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
-            title: "Lip Butter",
+            title: "Beard Oil",
             description: "this is packaging 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
-            title: "Chapstick",
-            description: "this is packaging 2",
-            imgURL:
-              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-          },
-          {
-            title: "Lip Liner",
-            description: "this is packaging 2",
-            imgURL:
-              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-          },
-          {
-            title: "Lip Scrub",
-            description: "this is packaging 2",
-            imgURL:
-              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-          },
-          {
-            title: "Rose water",
+            title: "Beard butter",
             description: "this is packaging 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
@@ -257,18 +258,18 @@ export const products = [
       },
       {
         stepNo: 2,
-        stepName: "packaging",
+        stepName: "bottle",
         category: "Hair Care",
         stepOptions: [
           {
-            title: "packaging 1",
-            description: "this is packaging 1",
+            title: "bottle 1",
+            description: "this is bottle 1",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
-            title: "packaging 2",
-            description: "this is packaging 2",
+            title: "bottle 2",
+            description: "this is bottle 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
@@ -276,18 +277,37 @@ export const products = [
       },
       {
         stepNo: 3,
-        stepName: "flavor",
+        stepName: "oil",
         category: "Hair Care",
         stepOptions: [
           {
-            title: "flavor 1",
-            description: "this is flavor 1",
+            title: "oil 1",
+            description: "this is oil 1",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
           {
-            title: "flavor 2",
-            description: "this is flavor 2",
+            title: "oil 2",
+            description: "this is oil 2",
+            imgURL:
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
+          },
+        ],
+      },
+      {
+        stepNo: 4,
+        stepName: "label",
+        category: "Body Care",
+        stepOptions: [
+          {
+            title: "label 1",
+            description: "this is label 1",
+            imgURL:
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
+          },
+          {
+            title: "label 2",
+            description: "this is label 2",
             imgURL:
               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
           },
@@ -295,165 +315,85 @@ export const products = [
       },
     ],
   },
-
-  //   {
-  //     title: "Body Care",
-  //     description:
-  //       "Choose from over 40 lipgloss shades and flavors to create a unique expeirence or your customers.",
-  //     imgUrl:
-  //       "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-  //     buyLink: "",
-  //     steps: ["products", "packaging"],
-  //     stepContent: [
-  //       {
-  //         stepNo: 1,
-  //         stepName: "products",
-  //         stepOptions: [
-  //           {
-  //             title: "Body Scrub",
-  //             description: "this is product 1",
-  //             imgURL:
-  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-  //           },
-  //           {
-  //             title: "Body butter",
-  //             description: "this is packaging 2",
-  //             imgURL:
-  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-  //           },
-  //           {
-  //             title: "Body oil",
-  //             description: "this is packaging 2",
-  //             imgURL:
-  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-  //           },
-  //           {
-  //             title: "Hand Cream",
-  //             description: "this is packaging 2",
-  //             imgURL:
-  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-  //           },
-  //         ],
-  //       },
-
-  //       {
-  //         stepNo: 2,
-  //         stepName: "packaging",
-  //         stepOptions: [
-  //           {
-  //             title: "packaging 1 liner",
-  //             description: "this is packaging 1",
-  //             imgURL:
-  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-  //           },
-  //           {
-  //             title: "packaging 2 liner",
-  //             description: "this is packaging 2",
-  //             imgURL:
-  //               "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/339329215_743713277480581_60823715177679472_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=101&_nc_ohc=0rAPEXX_UcAAX84_ofb&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA3MzY3OTAxODI3MTIwNDYzMw%3D%3D.2-ccb7-5&oh=00_AfDmlTZvKeQaQLf8iZs9dpUg0R4MjS2j2Vy65W1FaIpo8g&oe=643C6C46&_nc_sid=6136e7",
-  //           },
-  //         ],
-  //       },
-  //     ],
-  //   },
-
-  //   {
-  //     title: "Lip-balm",
-  //     description:
-  //       "Choose from over 40 lipgloss shades and flavors to create a unique expeirence or your customers. ",
-  //     imgUrl:
-  //       "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-  //     buyLink: "",
-  //     steps: ["shade"],
-  //     stepContent: [
-  //       {
-  //         stepNo: 1,
-  //         stepName: "shade",
-  //         stepOptions: [
-  //           {
-  //             title: "Mauve",
-  //             description:
-  //               "MAUVE is a tinted wine shade. A mixture of dark purple and dark wine. She’s berry and grape scented🍇",
-  //             imgURL:
-  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-  //           },
-  //           {
-  //             title: "Berry Shine",
-  //             description:
-  //               "Grape ish purple in dazzling holographic glitters💜. She’s Berries scented and comes out a little tinted and clear on the lips. ",
-  //             imgURL:
-  //               "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/339329215_743713277480581_60823715177679472_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=101&_nc_ohc=0rAPEXX_UcAAX84_ofb&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA3MzY3OTAxODI3MTIwNDYzMw%3D%3D.2-ccb7-5&oh=00_AfDmlTZvKeQaQLf8iZs9dpUg0R4MjS2j2Vy65W1FaIpo8g&oe=643C6C46&_nc_sid=6136e7",
-  //           },
-  //         ],
-  //       },
-  //     ],
-  //   },
-
-  //   {
-  //     title: "Eyeliner",
-  //     description:
-  //       "Choose from over 40 lipgloss shades and flavors to create a unique expeirence or your customers.",
-  //     imgUrl:
-  //       "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-  //     buyLink: "",
-  //     steps: ["packaging", "shade", "flavor"],
-  //     stepContent: [
-  //       {
-  //         stepNo: 1,
-  //         stepName: "packaging",
-  //         stepOptions: [
-  //           {
-  //             title: "packaging 1 liner",
-  //             description: "this is packaging 1",
-  //             imgURL:
-  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-  //           },
-  //           {
-  //             title: "packaging 2 liner",
-  //             description: "this is packaging 2",
-  //             imgURL:
-  //               "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/339329215_743713277480581_60823715177679472_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=101&_nc_ohc=0rAPEXX_UcAAX84_ofb&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA3MzY3OTAxODI3MTIwNDYzMw%3D%3D.2-ccb7-5&oh=00_AfDmlTZvKeQaQLf8iZs9dpUg0R4MjS2j2Vy65W1FaIpo8g&oe=643C6C46&_nc_sid=6136e7",
-  //           },
-  //         ],
-  //       },
-
-  //       {
-  //         stepNo: 2,
-  //         stepName: "shade",
-  //         stepOptions: [
-  //           {
-  //             title: "shade 1 liner",
-  //             description: "this is shade 1",
-  //             imgURL:
-  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-  //           },
-  //           {
-  //             title: "shade 2 liner",
-  //             description: "this is shade 2",
-  //             imgURL:
-  //               "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/339329215_743713277480581_60823715177679472_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=101&_nc_ohc=0rAPEXX_UcAAX84_ofb&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA3MzY3OTAxODI3MTIwNDYzMw%3D%3D.2-ccb7-5&oh=00_AfDmlTZvKeQaQLf8iZs9dpUg0R4MjS2j2Vy65W1FaIpo8g&oe=643C6C46&_nc_sid=6136e7",
-  //           },
-  //         ],
-  //       },
-
-  //       {
-  //         stepNo: 3,
-  //         stepName: "flavor",
-  //         stepOptions: [
-  //           {
-  //             title: "flavor 1 liner",
-  //             description: "this is flavor 1",
-  //             imgURL:
-  //               "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
-  //           },
-  //           {
-  //             title: "flavor 2 liner",
-  //             description: "this is flavor 2",
-  //             imgURL:
-  //               "https://scontent-los2-1.cdninstagram.com/v/t51.2885-15/339329215_743713277480581_60823715177679472_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=scontent-los2-1.cdninstagram.com&_nc_cat=101&_nc_ohc=0rAPEXX_UcAAX84_ofb&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzA3MzY3OTAxODI3MTIwNDYzMw%3D%3D.2-ccb7-5&oh=00_AfDmlTZvKeQaQLf8iZs9dpUg0R4MjS2j2Vy65W1FaIpo8g&oe=643C6C46&_nc_sid=6136e7",
-  //           },
-  //         ],
-  //       },
-  //     ],
-  //   },
+  {
+    title: "Home Care",
+    description:
+      "Choose from Hair Oil, Hair conditioner, hair shampoo, beard oil, beard butter and more.",
+    imgUrl:
+      "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
+    buyLink: "",
+    steps: ["products", "jar", "candle"],
+    //   steps: ["products", "jar", "candle"],
+    stepContent: [
+      {
+        stepNo: 1,
+        category: "Home Care",
+        stepName: "products",
+        stepOptions: [
+          {
+            title: "Hair Conditioner",
+            description: "this is product 1",
+            imgURL:
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
+          },
+          {
+            title: "Hair Shampoo",
+            description: "this is packaging 2",
+            imgURL:
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
+          },
+          {
+            title: "Beard Oil",
+            description: "this is packaging 2",
+            imgURL:
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
+          },
+          {
+            title: "Beard butter",
+            description: "this is packaging 2",
+            imgURL:
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
+          },
+        ],
+      },
+      {
+        stepNo: 2,
+        stepName: "jar",
+        category: "Home Care",
+        stepOptions: [
+          {
+            title: "jar 1",
+            description: "this is jar 1",
+            imgURL:
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
+          },
+          {
+            title: "jar 2",
+            description: "this is jar 2",
+            imgURL:
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
+          },
+        ],
+      },
+      {
+        stepNo: 3,
+        stepName: "candle",
+        category: "Home Care",
+        stepOptions: [
+          {
+            title: "candle 1",
+            description: "this is candle 1",
+            imgURL:
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
+          },
+          {
+            title: "candle 2",
+            description: "this is candle 2",
+            imgURL:
+              "https://res.cloudinary.com/onedebeos/image/upload/v1682277193/labelme/image_1_fmhce7.png",
+          },
+        ],
+      },
+    ],
+  },
 ];

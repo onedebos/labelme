@@ -27,7 +27,7 @@ const cart = ({ signedIn }) => {
       // designURL: ,
       orderQty: data.orderQty,
     };
-    console.log(itemForCart);
+    console.log({ data });
 
     // if user is not signedIn, save to cart then save cart to Local
     if (!signedIn) {

@@ -1,28 +1,3 @@
-// LABEL ME WEBSITE
-
-// Front page
-
-// BODY CARE
-// Body scrub➡️ Choose your jar, pick your scrub, label type,submit your logo and design.
-// Body butter
-// Body oil
-// Hand cream
-
-// HAIR CARE
-// Hair oil➡️ Choose your bottle, pick your oil, label type,submit your logo and design
-// Hair conditioner
-// Hair shampoo
-// Beard oil
-// Beard butter
-
-// HOME CARE
-// scented candles➡️ Choose your Jar, pick your candle, Submit your logo and design.
-// Reed diffusers
-// Room spray
-// Liquid wash
-// Hand wash
-// Toilet cleaner
-
 import SCItems from "./SCItems";
 import { newID, storeLocally } from "../../../helpers/helpers";
 import { products } from "../../../helpers/products";

@@ -59,7 +59,6 @@ const StepsTemplate = ({ productsObject, selectedItem }) => {
         }
       });
 
-      console.log({ prevStepNo, prevSteps, pStep });
       return { prevStepNo, prevSteps };
     }
   };

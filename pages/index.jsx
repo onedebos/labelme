@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import HomePage from "../components/landing/home/Home3";
 import StartCreating from "../components/landing/start-creating/StartCreating";
+import Categories from "../components/landing/start-creating/Categories";
 import StartBusiness from "../components/landing/start-creating/StartBusiness";
 import QuickEasy from "../components/landing/start-creating/QuickEasy";
 import Reviews from "../components/landing/start-creating/Reviews";
@@ -18,7 +19,8 @@ const Home = () => {
 
       <main className="flex w-full flex-col border-t md:border-0">
         <HomePage />
-        <StartCreating />
+        {/* <StartCreating /> */}
+        <Categories />
         <StartBusiness />
         <QuickEasy />
         <Reviews />
